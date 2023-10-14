@@ -1,14 +1,20 @@
 import "./Hotelcard.css";
+import { useNavigate } from "react-router-dom";
 
 export const Hotelcard = ({hotel}) => {
 
     const { _id, name, image, address, state, rating, price } = hotel;
 
+    const navigate = useNavigate();
+    const handleHotelCardClick = () => {
+        navigate(`/hotels/${name}/${address}=${state}/${_id}/reserve`);
+    };
+
     return (
         
 
         <div className="card hotelcard-container">
-            
+            <div onClick={handleHotelCardClick}>
             <img src={image} className="card-img-top img" alt={name} />
             <div className="card-body">
                 <div className="d-flex align-center">
@@ -25,7 +31,7 @@ export const Hotelcard = ({hotel}) => {
                     <span>/night</span>
                 </p>
             </div>
-            
+            </div>
             <button className="btn-wishlist">
                 <span className="fa-regular fa-heart favorite"></span>
             </button>

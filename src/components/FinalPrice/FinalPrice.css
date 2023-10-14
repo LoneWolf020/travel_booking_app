@@ -1,0 +1,74 @@
+.price-details-container {
+    align-self: flex-start;
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    width: 25rem;
+    margin-left: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .guests {
+    border: 1px solid var(--container-border-color);
+    padding: 4px 0;
+    text-align: left;
+  }
+  
+  .gutter-sm {
+    padding: 8px 1rem;
+  }
+  
+  .btn-reserve {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .price-distribution {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .final-price {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .final-price:last-child {
+    border-top: 1px solid var(--container-border-color);
+  }
+  
+  .justify-space-between {
+    justify-content: space-between;
+  }
+  
+  .guest-count-input {
+    border: none;
+  }
+  
+  .guest-count-input:focus {
+    outline: none;
+  }
+
+  .check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dispFlex {
+    display: flex;
+    align-items: center;
+  }
+
+  .check-2 {
+    display: flex;
+    flex-direction: column;
+  }

@@ -1,0 +1,18 @@
+.single-hotel-page {
+    padding: 2rem 8rem 2rem 9rem;
+  }
+  
+  .hotel-name-add {
+    font-size: 2rem;
+    
+  }
+
+  .dispFlex {
+    display: flex;
+  }
+
+  .main-container-div {
+    position: relative;
+  }
+
+ 
