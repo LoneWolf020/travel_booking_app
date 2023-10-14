@@ -1,9 +1,9 @@
 import './App.css';
-import {Navigationbar} from "./components/index";
+import {Home} from "./pages/index";
 
 function App() {
   return (
-    <Navigationbar />
+    <Home />
   );
 }
 

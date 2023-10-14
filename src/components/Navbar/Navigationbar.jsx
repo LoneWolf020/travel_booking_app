@@ -2,18 +2,31 @@ import "./Navigationbar.css";
 
 export const Navigationbar = () => {
     return (
-        <header className="heading d-flex align-center">
-            <h1 className="heading-1">
+        
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <div className="container-fluid heading">
+                <a className="navbar-brand" href={"/"}>ChaeinG</a>
 
-                ChaleinG
-
-            </h1>
-            <nav className="d-flex align-center gap-large">
-                <div className="nav d-flex align-center cursor-pointer">
-                    <i class="fa-solid fa-bars profile-option menu"></i>
-                    <i class="fa-regular fa-user profile-option person"> </i>
+                <div className="form-container cursor-pointer nav">
+                    <span className="form-option">Anywhere</span>
+                    <span className="border-right-1px"></span>
+                    <span className="form-option">Any week</span>
+                    <span className="border-right-1px"></span>
+                    <span className="form-option">Add guest</span>
+                    <i className="fa-solid fa-magnifying-glass search"></i>
                 </div>
-            </nav>
-        </header>
+
+
+                <div className="navbar-nav nav cursor-pointer">
+                    
+                    <i className="fa-solid fa-bars profile-option menu"></i>
+                    <i className="fa-regular fa-user profile-option person"> </i>
+
+                </div>
+
+            </div>
+        </nav>
+
+
     )
 }
