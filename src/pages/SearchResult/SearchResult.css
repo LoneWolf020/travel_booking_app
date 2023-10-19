@@ -1,0 +1,10 @@
+.button.btn-filter.position {
+    left: 3rem;
+    width: max-content;
+}
+
+.search-result {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

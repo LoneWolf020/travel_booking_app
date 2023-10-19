@@ -1,0 +1,18 @@
+.cont-top1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cont-top2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.amenities-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+

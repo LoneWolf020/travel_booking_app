@@ -36,6 +36,8 @@
     background-color: var(--primary-color);
     height: 100%;
     color: #fafafa;
+    display: flex;
+    align-items: center;
   }
   
   .label {
@@ -56,6 +58,7 @@
     max-height: 50vh;
     overflow-y: auto;
     border-radius: 4px;
+    position: absolute;
     top: 8rem;
     left: 22%;
   }
@@ -80,4 +83,7 @@
   .button .highlight {
     font-size: 2rem;
     color: var(--background-color);
+  }
+  .cursor-pointer:hover {
+    cursor: pointer;
   }
