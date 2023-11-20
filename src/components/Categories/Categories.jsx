@@ -19,7 +19,7 @@ export const Categories = () => {
                 console.log(error);
             }
         })();
-    }, []);
+    }, [categories]);
 
     const handleCategoryClick = (category) => {
         setHotelCategory(category);
