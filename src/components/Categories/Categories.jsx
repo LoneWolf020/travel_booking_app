@@ -7,7 +7,7 @@ export const Categories = () => {
 
     const [categories, setCategories] = useState([]);
     const {hotelCategory, setHotelCategory} = useCategory();
-    const {isFilterModalOpen, filterDispatch} = useFilter();
+    const { filterDispatch} = useFilter();
 
     useEffect(() => {
         (async () => {
@@ -36,7 +36,7 @@ export const Categories = () => {
     return (
         <section className="categories">
             <button className="button btn-category btn-left fixed cursor-pointer">
-            <i class="fa-solid fa-angle-left"></i>
+            <i className="fa-solid fa-angle-left"></i>
             </button>
 
             
@@ -50,11 +50,11 @@ export const Categories = () => {
             
                 
             <button className="right-btn" >
-                <i class="fa-solid fa-angle-right"></i>
+                <i className="fa-solid fa-angle-right"></i>
             </button>
                 
             <button className="btn btn-filter cursor-pointer filter-1" onClick={handleFilterClick}>
-                <i class="fa-solid fa-filter"></i>
+                <i className="fa-solid fa-filter"></i>
                 <span>Filter</span>
             </button>
             

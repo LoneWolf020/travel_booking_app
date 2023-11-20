@@ -1,0 +1,67 @@
+.os-container {
+    width: 38rem;
+    padding: 2rem 2rem 3rem 2rem;
+    color: var(--text-color-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.checkk-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close{
+    color: var(--text-color-primary);
+}
+
+.close:hover {
+    background-color: var(--accent-color);
+}
+
+.br-bottom {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.pd-small {
+    padding-bottom: 1rem;
+}
+
+.os-container .img {
+    width: 12rem;
+    height: 6rem;
+}
+
+.hoteldetails {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.fs-md {
+    font-size: 1.5rem;
+}
+
+.span-md {
+    font-size: 1.25rem;
+}
+
+.checkk-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkk-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.gapp {
+    gap: 4px;
+}
+
+.btn-close {
+    align-items: end;
+}

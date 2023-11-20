@@ -1,13 +1,14 @@
 import "./SearchResult.css";
-import {useCategory, useDate} from "../../context";
+import {useAlert, useCategory, useDate} from "../../context";
 import { Fragment, useEffect, useState } from "react";
 import axios from "axios";
-import {Navigationbar, Hotelcard} from "../../components";
+import {Navigationbar, Hotelcard, Alert} from "../../components";
 
 export const SearchResult = () => {
     const {hotelCategory} = useCategory();
     const {destination} = useDate();
     const [hotels, setHotels] = useState([]);
+    const {alert} = useAlert();
     console.log(hotelCategory);
 
     useEffect(() => {
@@ -39,6 +40,7 @@ export const SearchResult = () => {
                     <h3>No Result Found</h3>
                 )}
             </section>
+            {alert.open && <Alert />}
         </Fragment>
       )
 }

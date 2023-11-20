@@ -15,7 +15,7 @@ export const HotelDetails = ({singleHotel}) => {
             <div className="key-features host-details">
                 <div className="gutter-bottom-small">
                     <p className="gutter-bottom">
-                        <i class="fa-solid fa-feather"></i>Dedicated WorkSpace
+                        <i className="fa-solid fa-feather"></i>Dedicated WorkSpace
                     </p>
                     <span className="span">
                         A common area with wifi that is well suited for working
@@ -23,14 +23,14 @@ export const HotelDetails = ({singleHotel}) => {
                 </div>
                 <div className="gutter-bottom-small">
                     <p className="gutter-bottom">
-                        <i class="fa-solid fa-feather"></i>Great Location
+                        <i className="fa-solid fa-feather"></i>Great Location
                     </p>
                     <span className="span">
                         80% of recent guests gave the location a 5-star rating
                     </span>
                 </div>
                 <p className="gutter-bottom">
-                    <i class="fa-solid fa-feather"></i>Free cancellation before 7 days of booking
+                    <i className="fa-solid fa-feather"></i>Free cancellation before 7 days of booking
                 </p>
             </div>
             <div className="amenities-container">
@@ -38,24 +38,24 @@ export const HotelDetails = ({singleHotel}) => {
                 <div className="amenities-div">
                     <div className="amenities-div amenities-col">
                         <span className="span gutter-bottom">
-                            <i class="fa-solid fa-feather"></i>Kitchen icon
+                            <i className="fa-solid fa-feather"></i>Kitchen icon
                         </span>
                         <span className="span gutter-bottom">
-                            <i class="fa-solid fa-feather"></i>Free Parking
+                            <i className="fa-solid fa-feather"></i>Free Parking
                         </span>
                         <span className="span gutter-bottom">
-                            <i class="fa-solid fa-feather"></i>Dedicated Workspace
+                            <i className="fa-solid fa-feather"></i>Dedicated Workspace
                         </span>
                     </div>
                     <div className="amenities-div amenities-col">
                         <span className="span gutter-bottom">
-                            <i class="fa-solid fa-feather"></i>Wifi Icon
+                            <i className="fa-solid fa-feather"></i>Wifi Icon
                         </span>
                         <span className="span gutter-bottom">
-                            <i class="fa-solid fa-feather"></i>Washing Machine
+                            <i className="fa-solid fa-feather"></i>Washing Machine
                         </span>
                         <span className="span gutter-bottom">
-                            <i class="fa-solid fa-feather"></i>Patio or Balcony
+                            <i className="fa-solid fa-feather"></i>Patio or Balcony
                         </span>
                     </div>
                 </div>

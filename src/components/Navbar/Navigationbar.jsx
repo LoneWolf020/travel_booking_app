@@ -1,9 +1,10 @@
 import "./Navigationbar.css";
-import { useDate } from "../../context";
+import { useDate, useAuth } from "../../context";
 
 export const Navigationbar = () => {
 
     const { checkInDate, checkOutDate, dateDispatch, destination, guests } = useDate();
+    const {authDispatch, accessToken} = useAuth();
 
     const handleSearchClick = () => {
         dateDispatch({
@@ -11,11 +12,23 @@ export const Navigationbar = () => {
         })
     }
 
+    const handleAuthClick = () => {
+        if (accessToken) {
+            authDispatch({
+              type: "SHOW_DROP_DOWN_OPTIONS"
+            })
+          } else {
+            authDispatch({
+              type: "SHOW_AUTH_MODAL",
+            });
+          }
+    }
+
     return (
 
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid heading">
-                <a className="navbar-brand" href={"/"}>ChaeinG</a>
+                <a className="navbar-brand test-1" href={"/"}>ChaleinG</a>
 
                 <div className="form-container cursor-pointer nav" onClick={handleSearchClick}>
                     <span className="form-option">{destination || "Anywhere"}</span>
@@ -34,7 +47,7 @@ export const Navigationbar = () => {
                 </div>
 
 
-                <div className="navbar-nav nav cursor-pointer">
+                <div className="navbar-nav nav cursor-pointer" onClick={handleAuthClick}>
 
                     <i className="fa-solid fa-bars profile-option menu"></i>
                     <i className="fa-regular fa-user profile-option person"> </i>

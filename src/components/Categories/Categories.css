@@ -1,6 +1,7 @@
 .categories {
     display: flex;
     justify-content: space-between;
+    /* background-color: #FFC7C7; */
 }
 
 .gap-large {
